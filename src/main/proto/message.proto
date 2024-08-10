@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-package ExemploProtocolBuffers;
+package ChatRabbitMQ;
 
 option java_package = "br.ufs.dcomp.ChatRabbitMQ";
 option java_outer_classname = "MessageProto";
 
 message Message {
             string  SenderName  = 1;
-            String  Message     = 2;
+            string  Message     = 2;
             string  Date        = 3;
             string  Hour        = 4;
             string  Minute      = 5;
-            bool    IsGroup     = 6;
+            string  Group       = 6;
 }
